@@ -96,7 +96,6 @@ describe "Sending events" do
 
       output.register
     end
-
     it "flushes the events in the buffer" do
       number_of_events.times { output.receive(event) }
       output.close
